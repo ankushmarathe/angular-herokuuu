@@ -1,0 +1,14 @@
+<section style="text-align: center;">
+
+  <div>
+    <h2>Categories</h2>
+    <button (click)="onclickk()">click</button>
+  </div>
+
+  <div *ngIf="clickkk">
+    <div  *ngFor="let c of cats" style="color: rgb(0, 0, 0);font-size: large;">
+      <p>{{c?.name}}------------------{{c?.sequence}}</p>
+    </div>
+  </div>
+
+</section>
